@@ -7,7 +7,7 @@ const server = http.createServer((req, res) =>{
     res.setHeader('Content-type', 'application/json; charset=utf-8')
 
     res.end(JSON.stringify({ status: "ok" }))
-    
+    // Sem ele o servidor não carrega nunca.
 })
 
 server.listen(PORTA, () => {
